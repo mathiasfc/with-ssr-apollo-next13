@@ -28,7 +28,7 @@ const HomePage = ({ products }) => {
     <>
       <NextSeo
         title="POC Next 13"
-        description={`${loadedProducts?.length || 0} Carregados`}
+        description={`${loadedProducts?.length || 0} produtos carregados`}
         canonical={`https://with-ssr-apollo-next13.vercel.app/${shopId}`}
         openGraph={{
           type: "website",
@@ -36,7 +36,7 @@ const HomePage = ({ products }) => {
           url: `https://with-ssr-apollo-next13.vercel.app/${shopId}`,
           site_name: "POC Next 13",
           title: "POC Next 13",
-          description: `${loadedProducts?.length || 0} Carregados`,
+          description: `${loadedProducts?.length || 0} produtos carregados`,
           images: [
             {
               url: "/favicon.png",
