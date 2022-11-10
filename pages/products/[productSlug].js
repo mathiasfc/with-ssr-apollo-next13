@@ -35,11 +35,11 @@ const ProductPage = ({ product }) => {
       <NextSeo
         title={`${title} - ${price}`}
         description="Descrição do produto"
-        canonical="https://poc-next-13.vercel.app/"
+        canonical="https://with-ssr-apollo-next13.vercel.app/"
         openGraph={{
           type: "website",
           locale: "pt_BR",
-          url: `https://poc-next-13.vercel.app/products/${loadedProduct.slug}`,
+          url: `https://with-ssr-apollo-next13.vercel.app/products/${loadedProduct.slug}`,
           site_name: "Poc Next 13",
           id: loadedProduct?._id,
           title,
