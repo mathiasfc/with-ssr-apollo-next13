@@ -1,7 +1,7 @@
-import { initializeApollo, addApolloState } from "../lib/apolloClient";
-import { PRODUCTS } from "../graphql/queries";
+import { initializeApollo, addApolloState } from "../../lib/apolloClient";
+import { PRODUCTS } from "../../graphql/queries";
 import { useRouter } from "next/router";
-import Product from "../components/Product";
+import Product from "../../components/Product";
 import { useQuery } from "@apollo/client";
 import { NextSeo } from "next-seo";
 
@@ -29,11 +29,11 @@ const HomePage = ({ products }) => {
       <NextSeo
         title="POC Next 13"
         description={`${loadedProducts?.length || 0} Carregados`}
-        canonical="https://with-ssr-apollo-next13.vercel.app/"
+        canonical={`https://with-ssr-apollo-next13.vercel.app/${shopId}`}
         openGraph={{
           type: "website",
           locale: "pt_BR",
-          url: "https://with-ssr-apollo-next13.vercel.app/",
+          url: `https://with-ssr-apollo-next13.vercel.app/${shopId}`,
           site_name: "POC Next 13",
           title: "POC Next 13",
           description: `${loadedProducts?.length || 0} Carregados`,

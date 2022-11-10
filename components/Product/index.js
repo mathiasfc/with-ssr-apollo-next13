@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Product = ({ product, shopId }) => {
   console.log(product);
-  const productHref = `/products/${product?.slug}?shopId=${shopId}`;
+  const productHref = `/${shopId}/products/${product?.slug}`;
 
   return (
     <Link href={productHref}>
